@@ -20,4 +20,4 @@ def is_pandigital(n):
 	return True # The number is pandigital
 
 if __name__ == '__main__':
-	gen_prime(120)
+	gen_prime('YOUR CALL FOR LARGEST NUMBER YOU WANT TO GENERATE')
