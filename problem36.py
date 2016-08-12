@@ -11,3 +11,4 @@ def bin_base(n):
 
 if __name__ == '__main__':
 	bin_base(1000000) # One million numbers 
+
