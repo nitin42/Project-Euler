@@ -1,2 +1,2 @@
 # Project-Euler
-Contains my solutions to problems created at https://projecteuler.net/
+Contains my solutions to problems at https://projecteuler.net/
