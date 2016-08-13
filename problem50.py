@@ -28,4 +28,5 @@ def is_prime(n):
 	else:
 		return False
 
-prime(1000000)
+if __name__ == '__main__':
+	prime(1000000)
