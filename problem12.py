@@ -33,9 +33,20 @@ while not isTriangleNumber(first_num):
 last = last_term(first_num)
 
 
-while divisors(first_num) <= 500: # Check for triangle numbers greater than 500 
-    # add the next term to first_num to get the next triangle number
-    check += (seriesLastTerm + 1)
-    seriesLastTerm += 1
-print first_num
+def final():
+	while divisors(first_num) <= 500: # Check for triangle numbers greater than 500 
+		# add the next term to first_num to get the next triangle number
+		check += (seriesLastTerm + 1)
+		seriesLastTerm += 1
+	print first_num
+
+	'''
+	>>>final()
+	62378865
+	
+	'''
+
+if __name__ == '__main__':
+	import doctest
+	doctest.testmod()
 	
