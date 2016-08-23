@@ -24,6 +24,12 @@ def sequence_of_primes(a, b):
 
 def gen_prime():
 
+    '''
+    >>> gen_prime()
+    71 
+    59231
+    '''
+
     p = generate_primes(1000)
 
     maximum = 0
@@ -41,13 +47,7 @@ def gen_prime():
     print(maximum)
     print(abs(nums[0] * nums[1]))
 
-    '''
-    >>> gen_prime()
-    71 primes
-    59231
-    '''
-
 
 if __name__ == '__main__':
     import doctest
-    doctest.testmod()
+    doctest.testmod(verbose=True)
