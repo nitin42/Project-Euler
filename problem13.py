@@ -100,6 +100,15 @@ number = ''' 37107287533902102798797998220837590246510135740250
 53503534226472524250874054075591789781264330331690
 '''
 
-num = [int(i) for i in number.split("\n")]
-
-print str(sum(num))[:10]
+def cal():
+  num = [int(i) for i in number.split("\n")]
+  print str(sum(num))[:10]
+  
+  '''
+  >>> call()
+  5537376230
+  '''
+  
+if __name__ == '__main__':
+  import doctest
+  doctest.testmod()
