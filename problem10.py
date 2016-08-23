@@ -11,3 +11,4 @@ def prime(n):
 	
 if __name__ == '__main__':
 	prime(2000000)
+	
