@@ -41,3 +41,4 @@ def gen_prime(n):
 
 if __name__ == '__main__':
 	gen_prime(1000000)
+	
