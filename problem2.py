@@ -10,3 +10,4 @@ print initial_sum
 
 if __name__ == '__main__':
 	fibo(4000000)
+	
