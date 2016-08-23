@@ -7,19 +7,29 @@ def divisors(n):
             arr.append(n/i) # Add the remainder
     return set(arr) # Each divisor should be unique
 
-sum_div = [] # Store the sum of the divisors from range upto 10000
+def cal():
 
-for j in range(0,10000):
-    sum_div.append(sum(divisors(j)))
+    sum_div = [] # Store the sum of the divisors from range upto 10000
 
-total = 0
+    for j in range(0,10000):
+        sum_div.append(sum(divisors(j)))
 
-for k in range(0, 10000):
-    a = sum_div[k] # store the sum of divisor of number k
-    if a<10000:
-        b = sum_div[a] # Store the sum of divisor of the previous sum as the number
-        if k == b and a!=b:
-            print '%s and %s are amicable' % (a, b)
-            total += a
+    total = 0
 
-print total
+    for k in range(0, 10000):
+        a = sum_div[k] # store the sum of divisor of number k
+        if a<10000:
+            b = sum_div[a] # Store the sum of divisor of the previous sum as the number
+            if k == b and a!=b:
+                total += a
+
+    print total
+
+    '''
+    >>> cal()
+    31626
+    '''
+
+if __name__ == '__main__':
+    import doctest
+    doctest.testmod()
