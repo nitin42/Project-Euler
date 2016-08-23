@@ -9,6 +9,11 @@ def divisors(n):
 
 def cal():
 
+    '''
+    >>> cal()
+    31626
+    '''
+
     sum_div = [] # Store the sum of the divisors from range upto 10000
 
     for j in range(0,10000):
@@ -25,11 +30,7 @@ def cal():
 
     print total
 
-    '''
-    >>> cal()
-    31626
-    '''
 
 if __name__ == '__main__':
     import doctest
-    doctest.testmod()
+    doctest.testmod(verbose=True)
