@@ -7,6 +7,12 @@ Solution: Just see that the number of digits present in the multiple of 6X are p
 # while loop iterator
 
 def multiple():
+	
+	'''
+	>>> multiple()
+	142857
+	'''
+	
 	i = 1
 
 	while True:
@@ -19,12 +25,6 @@ def multiple():
 							break
 		i += 1
 
-
-	'''
-	>>>142857
-	'''
-
-
 if __name__ == '__main__':
 	import doctest 
-	doctest.testmod()
+	doctest.testmod(verbose=True)
