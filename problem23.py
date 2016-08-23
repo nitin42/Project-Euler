@@ -16,6 +16,10 @@ def abundant_sum(n):
     return l
 
 def cal_abund():
+    '''
+    >>> cal_abund()
+    4179871
+    '''
     num = abundant_sum(28124) # Some numbers will be abundant and some will be deficient
     store = set()
 
@@ -32,12 +36,8 @@ def cal_abund():
     a = sum(set(range(28124)).difference(store))
     print a
 
-    '''
-    >>> cal_abund()
-    4179871
-    '''
 
 if __name__ == '__main__':
     import doctest
-    doctest.testmod()
+    doctest.testmod(verbose=True)
     
