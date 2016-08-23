@@ -1,16 +1,15 @@
-def factorial():
-	num = int(input("Enter a number: "))
-	factorial = 1
+def factorial(num):
+	fact = 1
 
 	# check if the number is negative, positive or zero
 	if num < 0:
 		return num
 	else:
 		for i in range(1,num + 1):
-			factorial = factorial*i
+			fact = fact*i
 		#print(factorial)
 
-	a = (list(str(factorial)))
+	a = (list(str(fact)))
    	
    	b = map(int, a)
 
@@ -18,6 +17,12 @@ def factorial():
 
    	print c
 
+   	'''
+   	>>> factorial(2)
+   	4
+   	'''
+
 
 if __name__ == '__main__':
-	factorial()
+	import doctest
+	doctest.testmod()
