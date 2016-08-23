@@ -9,3 +9,4 @@ def permutation():
 
 if __name__ == "__main__":
 	permutation()
+	
