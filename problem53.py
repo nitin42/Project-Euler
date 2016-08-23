@@ -1,6 +1,11 @@
 from math import factorial
 
 def combinatoric_selection():
+	'''
+	>>> combinatoric_selection()
+	142857
+	'''
+	
 	limit = 1000000 # Upto one million
 	count = 0
 	range_n = 100 # Range of the number
@@ -11,13 +16,9 @@ def combinatoric_selection():
 
 	print count
 
-	'''
-	>>>4589
-	'''
-
 if __name__ == '__main__':
 	import doctest
-	doctest.testmod()
+	doctest.testmod(verbose=True)
 
 
 	
