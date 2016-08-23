@@ -27,11 +27,5 @@ def lychrel_number():
 
 	print count
 
-	'''
-	>>>9999
-	'''
-
-
 if __name__ == '__main__':
-	import doctest
-	doctest.testmod()
+	lychrel_number()
