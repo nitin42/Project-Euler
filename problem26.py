@@ -1,4 +1,8 @@
 def reciprocate_cycle():
+    '''
+    >>> reciprocate_cycle()
+    999
+    '''
     mx = 0 # For storing the maximum number of the remainders
     for i in range(7, 1000):
         count = 0 # Initially there is no remainder so count is zero
@@ -15,12 +19,8 @@ def reciprocate_cycle():
             mx2 = i
 
     print  i
-
-    '''
-    >>> reciprocate_cycle()
-    999
-    ''' 
+ 
 
 if __name__ == '__main__':
     import doctest
-    doctest.testmod()
+    doctest.testmod(verbose=True)
