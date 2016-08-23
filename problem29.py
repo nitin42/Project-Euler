@@ -6,6 +6,10 @@
 '''
 
 def distinct_power():
+    '''
+    >>> distinct_power()
+    9183
+    '''
     l = []
     count = 0
     #a = set()
@@ -19,11 +23,6 @@ def distinct_power():
 
     print count
 
-    '''
-    >>> distinct_power()
-    9183
-    '''
-
 if __name__ == '__main__':
     import doctest
-    doctest.testmod()
+    doctest.testmod(verbose=True)
