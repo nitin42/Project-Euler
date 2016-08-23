@@ -8,22 +8,28 @@
 from random import randint
 
 def champernowne_constant():
-	l = [0.] # Initial decimal value
-	for i in range(1, 10000000):
-		l.append(randint(1, 1000000))
+    l = [0.] # Initial decimal value
+    for i in range(1, 10000000):
+        l.append(randint(1, 1000000))
 
-	# fraction = ''.join(l) # Our decimal fraction 
-	d_one = l[1]
-	d_ten = l[10]
-	d_hundred = l[100]
-	d_one_k = l[1000]
-	d_ten_k = l[10000]
-	d_one_l = l[100000]
-	d_ten_l = l[1000000]
+    # fraction = ''.join(l) # Our decimal fraction 
+    d_one = l[1]
+    d_ten = l[10]
+    d_hundred = l[100]
+    d_one_k = l[1000]
+    d_ten_k = l[10000]
+    d_one_l = l[100000]
+    d_ten_l = l[1000000]
 
-	result = d_one * d_ten * d_hundred * d_one_k * d_ten_k * d_one_l * d_ten_l
+    result = d_one * d_ten * d_hundred * d_one_k * d_ten_k * d_one_l * d_ten_l
 
-	print result
+    print result
+
+    '''
+    >>> champernowne_constant()
+    28091920344905555503616130094521501445600
+    '''
 
 if __name__ == '__main__':
-	champernowne_constant()
+    import doctest
+    doctest.testmod(verbose=True)
