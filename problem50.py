@@ -30,3 +30,4 @@ def is_prime(n):
 
 if __name__ == '__main__':
 	prime(1000000)
+	
