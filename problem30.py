@@ -9,23 +9,27 @@ Note - 1 is ignored as its sum
 '''
 
 def narcissistic_number():
-	l = []
-	final = 0 # Storing the sum of highest power
-	for i in range(2, 354295):
-		total = 0
-		for j in str(i):
-			total += int(j)**5
+    '''
+    >>> narcissistic_number()
+    443839
+    [4150, 4151, 54748, 92727, 93084, 194979]
+    '''
+    l = []
+    final = 0 # Storing the sum of highest power
+    for i in range(2, 354295):
+        total = 0
+        for j in str(i):
+            total += int(j)**5
 
-		if total == i: # If the sum is equal to the number
-			l.append(i)
+        if total == i: # If the sum is equal to the number
+            l.append(i)
 
-	for i in l:
-		final += i
+    for i in l:
+        final += i
 
-	print 'Sum of fifth power is : %d' %(final)
-
-	print 'List of all the numbers: ' 
-	print l
+    print (final)
+    print l
 
 if __name__ == '__main__':
-	narcissistic_number()
+    import doctest
+    doctest.testmod(verbose=True)
