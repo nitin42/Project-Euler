@@ -5,6 +5,10 @@ def score(name):
     return score
 
 def name():
+    '''
+    >>> name()
+    871198282
+    '''
     file_obj = open('names.txt', 'r')
     names = file_obj.read() # Read the lines
     names = names.replace('"', '') # Make the names stringify
@@ -19,11 +23,7 @@ def name():
 
     print total_score
 
-    '''
-    >>> name()
-    871198282
-    '''
 
 if __name__ == '__main__':
     import doctest
-    doctest.testmod()
+    doctest.testmod(verbose=True)
