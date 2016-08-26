@@ -1,3 +1,9 @@
+'''
+This problem uses binomial expression for rectangular grid of nxm measure. 
+ 		{n+m \choose n} = \frac{(n~+~m)!}{n!~\times~m!} 
+'''
+
+
 from math import factorial
 
 def grid_binomial():
