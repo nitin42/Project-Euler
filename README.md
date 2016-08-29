@@ -1,2 +1,2 @@
 # Project-Euler
-Contains my solutions to problems at https://projecteuler.net/
+Solutions to the archives at (https://projecteuler.net/) in python with proper tests.
